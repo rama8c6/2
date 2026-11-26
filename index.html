@@ -18,6 +18,38 @@ table, th, td {
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <TITLE>HTML News GitHub Bookmarks</TITLE>
+
+  <p id="datetime"></p>
+
+  <script>
+
+    function displayDateTime() {
+      // Get the current date and time
+      const now = new Date();
+
+      // Format options for day, date, and time
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+
+      // Convert to local string format
+      document.getElementById('datetime').innerHTML = "Current Date and Time is " + now.toLocaleString('en-US', options);
+    }
+
+    // Update every second
+    setInterval(displayDateTime, 1000);
+
+    // Call immediately to avoid 1-second delay
+    displayDateTime();
+
+  </script>
+
 <DL>
 				<table>
 				<tr>
@@ -325,6 +357,7 @@ table, th, td {
       <th><A HREF="https://www.youtube.com/@ScrollIn/videos" target="_blank"">Scroll.in</A></th>
       <th><A HREF="https://www.youtube.com/@MYSTERIOUSWORLDTAMIL/videos" target="_blank"">TamilComedy</A></th>
       <th><A HREF="https://www.youtube.com/@GobinathOfficial/videos" target="_blank"">Gobinath</A></th>
+      <th><A HREF="https://www.youtube.com/@ContiloeStudiosTamil/videos" target="_blank"">TenaliRaman</A></th>
 
 
      </tr>
